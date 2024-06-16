@@ -42,7 +42,7 @@ async def start_pm(client, message: Message, _):
             except BadRequest as e:
                 if "BUTTON_USER_PRIVACY_RESTRICTED" in str(e):
                     return await message.reply_text(
-                        "Your privacy settings do not allow sending this type of message. Please adjust your settings or contact support."
+                        "Your privacy settings do not allow sending this type of message. Please adjust your settings or contact support. Or just use help command"
                     )
                 else:
                     raise e
